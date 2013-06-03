@@ -7,8 +7,8 @@
 ;; color-theme.el package
 
 (cond
- ((fboundp 'load-theme)                 ;Emacs 24
-  (load-theme 'solarized-light t))	;See also *-dark theme
+ ((fboundp 'load-theme)                      ;Emacs 24
+  (load-theme 'solarized-light 'no-confirm)) ;See also *-dark theme
  ((or (featurep 'color-theme)
       (fboundp 'color-theme-install))
   (require 'color-theme-solarized)))
